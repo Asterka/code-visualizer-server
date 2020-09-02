@@ -10,12 +10,14 @@ const measures = fs.readFileSync(`${__dirname}/res/measures.xml`, "utf-8")
 
 
 function findMetricByClass(classMetric, parsedXMLMetrics, obj){
-	obj = { "name":classMetric }
-
 	parsedXMLMetrics["METRICS"]["METRIC"].forEach(element => {
-		if(element["$"].name === classMetric){
+		if(element["$"].abbreviation === classMetric){
+			obj = { "name":  element["$"].name}
+			obj.values = []
 			element["VALUE"].forEach(value => {
-				obj[value["$"]["measured"]] = {"className":value["$"]["measured"], "value": value["$"]["value"]}
+				let len = obj.values.length
+				obj.values[len] = {}
+				obj.values[len] = {"className":value["$"]["measured"], "value": value["$"]["value"]}
 			});
 		}
 	});
@@ -23,6 +25,7 @@ function findMetricByClass(classMetric, parsedXMLMetrics, obj){
 }
 
 app.get('/api', function(req, res) {
+	console.log("Got a request")
 	//Get the requested metric name
 	const classOfMetric = req.query.metric;
 	var response = "";
@@ -30,7 +33,7 @@ app.get('/api', function(req, res) {
 	const result = parseString(measures, function(err, result){
 		obj = findMetricByClass(classOfMetric, result, obj);
 	})
-	res.status(200).json(obj)
+	res.status(200).json(obj) 
 })
 
 
