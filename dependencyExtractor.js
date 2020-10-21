@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { exec } = require("child_process");
 
-const originalPath = "~/Desktop/projects/nodejs/code-visualizer-server";
+const originalPath = __dirname;
 
 function buildProject(){
     exec(`cd ${originalPath}/res/loadedRepo/InnoCrypt && gradle wrapper --gradle-version=5.1.1 && ./gradlew dist`, (error, stdout, stderr) => {
