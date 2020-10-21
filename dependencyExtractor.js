@@ -4,7 +4,7 @@ const { exec } = require("child_process");
 const originalPath = "~/Desktop/projects/nodejs/code-visualizer-server";
 
 function buildProject(){
-    exec(`cd ${originalPath}/res/loadedRepo/jadx-master && ./gradlew dist`, (error, stdout, stderr) => {
+    exec(`cd ${originalPath}/res/loadedRepo/InnoCrypt && gradle wrapper --gradle-version=5.1.1 && ./gradlew dist`, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
@@ -13,7 +13,7 @@ function buildProject(){
             console.log(`stderr: ${stderr}`);
             return;
         }
-        console.log(`stdout: ${stdout}`);
+        //console.log(`stdout: ${stdout}`);
         exec(`jdeps --dot-output ${originalPath}/res/deps ${originalPath}/res/loadedRepo/jadx-master/build/jadx/lib/* `, (error, stdout, stderr) => {
             if (error) {
                 console.log(`error: ${error.message}`);
@@ -53,7 +53,7 @@ function depsFromJar(){
 //TODO replace the variable part
 
 
-depsFromJar();
+buildProject();
 
 let deps = {};
 
