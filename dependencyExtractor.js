@@ -4,7 +4,7 @@ const { exec } = require("child_process");
 const originalPath = __dirname;
 
 function buildProject(){
-    exec(`cd ${originalPath}/res/loadedRepo/InnoCrypt && gradle wrapper --gradle-version=5.1.1 && ./gradlew dist`, (error, stdout, stderr) => {
+    exec(`cd ${originalPath}/res/loadedRepo/InnoCrypt && gradle wrapper --gradle-version=6.7 && ./gradlew dist`, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
