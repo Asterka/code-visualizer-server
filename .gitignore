@@ -40,6 +40,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+project_files/
+classes/
 
 # TypeScript v1 declaration files
 typings/
@@ -105,6 +107,3 @@ dist
 
 # User directories
 res/
-classes/
-
-./classes
