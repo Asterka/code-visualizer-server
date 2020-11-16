@@ -13,6 +13,7 @@
     "express": "^4.17.1",
     "expressjs": "^1.0.1",
     "node": "^14.13.1",
+    "node-find-folder": "^0.1.32",
     "nodejs": "0.0.0",
     "xml2js": "^0.4.23"
   },

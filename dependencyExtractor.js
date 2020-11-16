@@ -1,6 +1,8 @@
 const fs = require('fs');
-const { exec } = require("child_process");
+const { exec } = require('child_process');
+const ff = require('node-find-folder');
 
+const proj_name = "PC-Remote.jar";
 const originalPath = __dirname;
 
 function buildProject(){
@@ -34,7 +36,7 @@ function buildProject(){
 function depsFromJar(){
     exec(`sudo rm ${originalPath}/res/deps/*` ,(err, stdout, stderr)=>{
         
-        exec(`jdeps --dot-output ${originalPath}/res/deps -R ${originalPath}/res/jars/* `, (error, stdout, stderr) => {
+        exec(`jdeps --dot-output ${originalPath}/res/deps -R ${originalPath}/res/jars/* && rm ${originalPath}/res/deps/summary.dot`, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
@@ -45,11 +47,19 @@ function depsFromJar(){
         }
         getDeps(`./res/deps`).catch((err)=>{console.log(err)})
         setTimeout(()=>{
-            console.log(deps);
-        }, 2000)
+            console.log(deps[`${proj_name}.dot`]);//take the package name here
+        }, 2000)//Magic number
     })
 })
 }
+
+function findFolder(name){
+        const res = new ff(name.split('.').join('/'), {
+            nottraversal: ['node_modules', 'project_files', 'res']//Do not look into unnecessary folders
+          })[0];
+        return res;
+    }
+
 //TODO replace the variable part
 
 
@@ -75,14 +85,43 @@ async function getDeps(path) {
         
         if(element.indexOf("->")!=-1){
             splittedTempArray = element.split('"');
-            className = splittedTempArray[1];
+            packageName = splittedTempArray[1];
+            const relPath = __dirname + `/classes/${proj_name}/`;
             //get the last significant element, drop the ";" in the end
             dependsOn = splittedTempArray[splittedTempArray.length - 2];
-            if(Object.keys(deps[dirent.name]).indexOf(className) != -1){
-                deps[dirent.name][className].push(dependsOn);
+            dependsOn = dependsOn.split(' ')[0]
+            //if there is such a PACKAGE array
+            if(Object.keys(deps[dirent.name]).indexOf(packageName) != -1){
+                //Look for all the class files of the target package to see if it depends on them
+                const packageAddress = relPath + packageName.split('.').join('/');
+                if (!fs.existsSync(packageAddress)){
+                    console.log("no dir ",packageAddress);
+                    return;
+                }
+
+                //Find all .java class files in the PACKAGE 
+                let files = fs.readdirSync(packageAddress).filter((file)=>{
+                    if(file.indexOf('.java') === file.length-5){
+                        return file;
+                    }
+                });
+                console.log(files);
+                const inClasses = [];
+                
+                files.forEach((file)=>{
+                    fs.readFile(file, function(err,data){
+                        if (!err) {
+                           //console.log(file);
+                        } else {
+                            //console.log(err);
+                        }
+                    });    
+                })
+                
+                deps[dirent.name][packageName].push({dependsOn:dependsOn, inClasses: inClasses});
             }
             else{
-                deps[dirent.name][className] = []
+                deps[dirent.name][packageName] = []
             }
         }
 

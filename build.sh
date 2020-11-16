@@ -21,11 +21,11 @@ sudo apt install wget
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 #nvm install 14.13.1
 
-sudo wget https://github.com/kwart/jd-cli/releases/download/jd-cmd-1.1.0.Final/jd-cli-1.1.0.Final-dist.tar.gz
-rm -r project_files
-mkdir project_files && mkdir project_files/jd-cmd
-tar -xf jd-cli-1.1.0.Final-dist.tar.gz -C project_files/jd-cmd
-java -jar ./project_files/jd-cmd/jd-cli.jar ./res/jars/PC-Remote.jar -ods .//classes
+#sudo wget https://github.com/kwart/jd-cli/releases/download/jd-cmd-1.1.0.Final/jd-cli-1.1.0.Final-dist.tar.gz
+#rm -r project_files
+#mkdir project_files && mkdir project_files/jd-cmd
+#tar -xf jd-cli-1.1.0.Final-dist.tar.gz -C project_files/jd-cmd
+java -jar ./project_files/jd-cmd/jd-cli.jar ./res/jars/PC-Remote.jar -ods ./classes
 
 ########################
 #cd res && mkdir deps && mkdir loadedRepo
