@@ -2,7 +2,7 @@ const fs = require('fs');
 const { exec } = require('child_process');
 const ff = require('node-find-folder');
 
-const proj_name = "PC-Remote.jar";
+const proj_name = "com.ibm.icu_67.1.0.v20200706-1749.jar";
 const originalPath = __dirname;
 
 function buildProject(){
@@ -34,23 +34,29 @@ function buildProject(){
 }
 
 function depsFromJar(){
-    exec(`sudo rm ${originalPath}/res/deps/*` ,(err, stdout, stderr)=>{
-        
-        exec(`jdeps --dot-output ${originalPath}/res/deps -R ${originalPath}/res/jars/* && rm ${originalPath}/res/deps/summary.dot`, (error, stdout, stderr) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
+    exec(`sudo rm ${originalPath}/res/deps/* && java -jar ./project_files/jd-cmd/jd-cli.jar ./res/jars/${proj_name} -ods ./classes` ,(err, stdout, stderr)=>{
+        if(err){
+            console.log(`Failed while removing a directory and parsing classes from a jar:\n\n${err.message}`);
         }
-        if (stderr) {
-            console.log(`stderr: ${stderr}`);
-            return;
-        }
-        getDeps(`./res/deps`).catch((err)=>{console.log(err)})
-        setTimeout(()=>{
-            console.log(deps[`${proj_name}.dot`]);//take the package name here
-        }, 2000)//Magic number
-    })
+        else{
+            exec(`jdeps --dot-output ${originalPath}/res/deps -R ${originalPath}/res/jars/* && rm ${originalPath}/res/deps/summary.dot`, (error, stdout, stderr) => {
+            if (error) {
+                console.log(`error: ${error.message}`);
+                return;
+            }
+            if (stderr) {
+                console.log(`stderr: ${stderr}`);
+                return;
+            }
+            getDeps(`./res/deps`).catch((err)=>{console.log(err)})
+            setTimeout(()=>{
+                console.log(deps[`${proj_name}.dot`]['com.ibm.icu.util'][0]['inClasses']);//take the package name here
+            }, 2000)//Magic number
+        })
+
+}
 })
+
 }
 
 function findFolder(name){
@@ -94,6 +100,7 @@ async function getDeps(path) {
             if(Object.keys(deps[dirent.name]).indexOf(packageName) != -1){
                 //Look for all the class files of the target package to see if it depends on them
                 const packageAddress = relPath + packageName.split('.').join('/');
+                //In case a file is not
                 if (!fs.existsSync(packageAddress)){
                     console.log("no dir ",packageAddress);
                     return;
@@ -105,20 +112,23 @@ async function getDeps(path) {
                         return file;
                     }
                 });
-                console.log(files);
+                files = files.map((file)=>{return packageAddress+ '/' + file});
+                //console.log(files);
                 const inClasses = [];
-                
+                let dependentClasses = []
                 files.forEach((file)=>{
                     fs.readFile(file, function(err,data){
                         if (!err) {
-                           //console.log(file);
+                           if(data.indexOf(dependsOn) != -1){
+                                dependentClasses.push(file);
+                           }
                         } else {
                             //console.log(err);
                         }
                     });    
                 })
                 
-                deps[dirent.name][packageName].push({dependsOn:dependsOn, inClasses: inClasses});
+                deps[dirent.name][packageName].push({dependsOn:dependsOn, inClasses: dependentClasses});
             }
             else{
                 deps[dirent.name][packageName] = []
