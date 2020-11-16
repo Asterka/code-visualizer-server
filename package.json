@@ -1,10 +1,11 @@
 {
   "name": "code_vizualizer_server",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repo contains a web server, needed for the CodeVisualizer project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +15,14 @@
     "node": "^14.13.1",
     "nodejs": "0.0.0",
     "xml2js": "^0.4.23"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asterka/code-visualizer-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Asterka/code-visualizer-server/issues"
+  },
+  "homepage": "https://github.com/Asterka/code-visualizer-server#readme"
 }

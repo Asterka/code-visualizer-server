@@ -4,7 +4,7 @@ const { exec } = require("child_process");
 const originalPath = __dirname;
 
 function buildProject(){
-    exec(`cd ${originalPath}/res/loadedRepo/InnoCrypt && gradle wrapper --gradle-version=6.7 && ./gradlew dist`, (error, stdout, stderr) => {
+    exec(`cd ${originalPath}/res/loadedRepo/jadx-master && gradle wrapper --gradle-version=6.7 && ./gradlew dist`, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
@@ -53,7 +53,7 @@ function depsFromJar(){
 //TODO replace the variable part
 
 
-buildProject();
+depsFromJar();
 
 let deps = {};
 
@@ -67,18 +67,23 @@ async function getDeps(path) {
       //All deps
       deps[dirent.name] = {}
       let dep = data.toString()
-      //remove the braces and unneeded elments
-
       //TODO REGEXP matching
       dep = dep.slice(dep.indexOf("{")+2, dep.indexOf("}")).split('\n');
+
       dep.forEach(element => {
         //only take care of strings that contain "->" symbol (class dependencies definition)
+        
         if(element.indexOf("->")!=-1){
             splittedTempArray = element.split('"');
             className = splittedTempArray[1];
             //get the last significant element, drop the ";" in the end
             dependsOn = splittedTempArray[splittedTempArray.length - 2];
-            deps[dirent.name][className] = dependsOn;
+            if(Object.keys(deps[dirent.name]).indexOf(className) != -1){
+                deps[dirent.name][className].push(dependsOn);
+            }
+            else{
+                deps[dirent.name][className] = []
+            }
         }
 
     });
