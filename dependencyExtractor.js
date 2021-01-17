@@ -39,7 +39,7 @@ function depsFromJar(){
             console.log(`Failed while removing a directory and parsing classes from a jar:\n\n${err.message}`);
         }
         else{
-            exec(`jdeps --dot-output ${originalPath}/res/deps -R -v ${originalPath}/res/jars/* && rm ${originalPath}/res/deps/summary.dot`, (error, stdout, stderr) => {
+            exec(`jdeps --dot-output ${originalPath}/res/deps -verbose:class -R -filter:none ${originalPath}/res/jars/* && rm ${originalPath}/res/deps/summary.dot`, (error, stdout, stderr) => {
             if (error) {
                 console.log(`error: ${error.message}`);
                 return;
@@ -132,7 +132,7 @@ async function getDeps(path) {
                     });    
                 //})
                 
-                deps[dirent.name][packageName].push({dependsOn:dependsOn, inClasses: dependentClasses});
+                deps[dirent.name][packageName].push({dependsOn:dependsOn});
             }
             else{
                 deps[dirent.name][packageName] = []

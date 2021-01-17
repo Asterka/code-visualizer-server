@@ -1,45 +1,28 @@
+const express = require('express');
+const cors = require('cors');
+const fileUpload = require('express-fileupload');
 
-const express = require('express')
-const fs = require('fs')
-const path = require('path');
-const e = require('express');
-const app = express()
-const parseString = require('xml2js').parseString;
+const app = express();
 
-const measures = fs.readFileSync(`${__dirname}/res/measures.xml`, "utf-8")
+app.use(cors());
+app.use(fileUpload());
 
+// Upload Endpoint
+app.post('/upload', (req, res) => {
+  if (req.files === null) {
+    return res.status(400).json({ msg: 'No file uploaded' });
+  }
 
-function findMetricByClass(classMetric, parsedXMLMetrics, obj){
-	parsedXMLMetrics["METRICS"]["METRIC"].forEach(element => {
-		if(element["$"].abbreviation === classMetric){
-			obj = { "name":  element["$"].name}
-			obj.values = []
-			element["VALUE"].forEach(value => {
-				let len = obj.values.length
-				obj.values[len] = {}
-				obj.values[len] = {"className":value["$"]["measured"], "value": value["$"]["value"]}
-			});
-		}
-	});
-	return obj;
-}
+  const file = req.files.file;
 
-app.get('/api', function(req, res) {
-	console.log("Got a request")
-	//Get the requested metric name
-	const classOfMetric = req.query.metric;
-	var response = "";
-	let obj = {}
-	const result = parseString(measures, function(err, result){
-		obj = findMetricByClass(classOfMetric, result, obj);
-	})
-	res.status(200).json(obj) 
-})
+  file.mv(`${__dirname}/res/jars/${file.name}`, err => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send(err);
+    }
 
+    res.json({ fileName: file.name, filePath: `/uploads/${file.name}` });
+  });
+});
 
-
-
-let port = 3001;
-app.listen(port, function () {
-	console.log(`App is running on port ${port}`)
-})
+app.listen(5000, () => console.log('Server Started...'));

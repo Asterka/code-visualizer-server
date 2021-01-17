@@ -3,14 +3,7 @@ sudo apt-get update
 sudo apt install curl
 sudo apt-get install npm
 sudo apt install wget
-#sudo apt-get install unzip
-#sudo apt-get install zip
-#sudo apt install openjdk-11-jdk
 
-#curl -s "https://get.sdkman.io" | bash
-#source "$HOME/.sdkman/bin/sdkman-init.sh"
-#sdk install gradle 6.7
-#gradle -v
 
 #Load the compatible nvm and node version 14.13.1
 #sudo wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install$
