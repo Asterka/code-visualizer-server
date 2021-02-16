@@ -21,15 +21,17 @@ app.post("/upload", (req, res) => {
   }
 
   const file = req.files.file;
+  const token = req.body.token.split("-").join("").slice(0, 10);
+  console.log(token);
   const fileName = file.name;
   const ext = fileName.split(".")[fileName.split(".").length - 1];
-  let user_token = uuidv4().split("-").join("").slice(0, 7);
+  let project_token = uuidv4().split("-").join("").slice(0, 7);
 
   exec(
-    `mkdir ${originalPath}/res/upload_dir/${user_token}`,
+    `mkdir ${originalPath}/res/upload_dir/${token} && mkdir ${originalPath}/res/upload_dir/${token}/${project_token}`,
     (error, stdout, stderr) => {
       if (error) {
-        console.log(`error: ${stdout}`);
+        console.log(`error: ${error}`);
         return;
       }
       if (stderr) {
@@ -37,18 +39,18 @@ app.post("/upload", (req, res) => {
         return;
       }
 
-      file.mv(`${__dirname}/res/upload_dir/${user_token}/${file.name}`, (err) => {
+      file.mv(`${__dirname}/res/upload_dir/${token}/${project_token}/${file.name}`, (err) => {
         if (err) {
           console.error(err);
           return res.status(500).send(err);
         }
         let result = new Promise((resolve, reject) => {
-          depsFromJar(fileName, user_token, resolve);
+          depsFromJar(fileName, token, project_token, resolve);
         });
         result.then((result) => {
           res.json({
             fileName: file.name,
-            filePath: `/upload_dir/${file.name}`,
+            filePath: `/upload_dir/${token}/${project_token}/${file.name}`,
             data: result,
           });
         });
@@ -96,9 +98,9 @@ function buildProject() {
   );
 }
 
-const depsFromJar = (proj_name, user_token, resolve) => {
+const depsFromJar = (proj_name, token, project_token, resolve) => {
   exec(
-    `java -jar ./project_files/jd-cmd/jd-cli.jar ./res/upload_dir/${user_token}/${proj_name} -ods ./classes/${user_token} && cd ${originalPath}`,
+    `java -jar ./project_files/jd-cmd/jd-cli.jar ./res/upload_dir/${token}/${project_token}/${proj_name} -ods ./classes/${token}/${project_token} && cd ${originalPath}`,
     (err, stdout, stderr) => {
       if (err) {
         console.log(
@@ -106,7 +108,7 @@ const depsFromJar = (proj_name, user_token, resolve) => {
         );
       } else {
         exec(
-          `jdeps --dot-output ${originalPath}/res/deps/${user_token} -verbose:class -R -filter:none ${originalPath}/res/upload_dir/${user_token}/* && rm ${originalPath}/res/deps/${user_token}/summary.dot`,
+          `jdeps --dot-output ${originalPath}/res/deps/${token}/${project_token} -verbose:class -R -filter:none ${originalPath}/res/upload_dir/${token}/${project_token}/* && rm ${originalPath}/res/deps/${token}/${project_token}/summary.dot`,
           (error, stdout, stderr) => {
             if (error) {
               console.log(`error: ${stdout}`);
@@ -116,7 +118,7 @@ const depsFromJar = (proj_name, user_token, resolve) => {
               console.log(`stderr: ${stderr}`);
               return;
             }
-            getDeps(`./res/deps/${user_token}`, user_token, proj_name).catch((err) => {
+            getDeps(`./res/deps/${token}/${project_token}`, token, project_token, proj_name).catch((err) => {
               console.log(err);
             });
 
@@ -141,11 +143,11 @@ function findFolder(name) {
 
 let deps = {};
 
-async function getDeps(path, user_token, proj_name) {
+async function getDeps(path, token, project_token, proj_name) {
   console.log(path);
   const dir = await fs.promises.opendir(path);
   for await (const dirent of dir) {
-    fs.readFile(__dirname + `/res/deps/${user_token}/${dirent.name}`, function (err, data) {
+    fs.readFile(__dirname + `/res/deps/${token}/${project_token}/${dirent.name}`, function (err, data) {
       if (err) {
         throw err;
       }
@@ -161,7 +163,7 @@ async function getDeps(path, user_token, proj_name) {
         if (element.indexOf("->") != -1) {
           splittedTempArray = element.split('"');
           packageName = splittedTempArray[1];
-          const relPath = __dirname + `/classes/${user_token}/${proj_name}/`;
+          const relPath = __dirname + `/classes/${token}/${project_token}/${proj_name}/`;
           //get the last significant element, drop the ";" in the end
           dependsOn = splittedTempArray[splittedTempArray.length - 2];
           dependsOn = dependsOn.split(" ")[0];
