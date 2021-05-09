@@ -40,7 +40,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-project_files/
+project-files/
+upload-dir/
 classes/
 
 # TypeScript v1 declaration files
@@ -106,4 +107,4 @@ dist
 .tern-port
 
 # User directories
-res/
+res

@@ -47,7 +47,7 @@ app.post("/upload", (req, res) => {
   let project_token = uuidv4().split("-").join("").slice(0, 7);
 
   exec(
-    `mkdir -p ${originalPath}/res/upload_dir/${token}/${project_token}`,
+    `mkdir -p ${originalPath}/res/upload-dir/${token}/${project_token}`,
     (error, stdout, stderr) => {
       if (error) {
         console.log(`error: ${error}`);
@@ -59,7 +59,7 @@ app.post("/upload", (req, res) => {
       }
 
       file.mv(
-        `${__dirname}/res/upload_dir/${token}/${project_token}/${file.name}`,
+        `${__dirname}/res/upload-dir/${token}/${project_token}/${file.name}`,
         (err) => {
           if (err) {
             console.error(err);
@@ -71,7 +71,7 @@ app.post("/upload", (req, res) => {
           result.then((result) => {
             res.json({
               fileName: file.name,
-              filePath: `/upload_dir/${token}/${project_token}/${file.name}`,
+              filePath: `/upload-dir/${token}/${project_token}/${file.name}`,
               data: result,
             });
           });
@@ -85,7 +85,7 @@ app.listen(5000, () => console.log("Server Started..."));
 
 const depsFromJar = (proj_name, token, project_token, resolve) => {
   exec(
-    `java -jar ./project_files/jd-cmd/jd-cli.jar ./res/upload_dir/${token}/${project_token}/${proj_name} -ods ./classes/${token}/${project_token} && cd ${originalPath}`,
+    `java -jar ./project-files/jd-cmd/jd-cli.jar ./res/upload-dir/${token}/${project_token}/${proj_name} -ods ./classes/${token}/${project_token} && cd ${originalPath}`,
     (err, stdout, stderr) => {
       if (err) {
         console.log(
@@ -93,7 +93,7 @@ const depsFromJar = (proj_name, token, project_token, resolve) => {
         );
       } else {
         exec(
-          `jdeps --dot-output ${originalPath}/res/deps/${token}/${project_token} -verbose:class -R -filter:none ${originalPath}/res/upload_dir/${token}/${project_token}/* && rm ${originalPath}/res/deps/${token}/${project_token}/summary.dot`,
+          `jdeps --dot-output ${originalPath}/res/deps/${token}/${project_token} -verbose:class -R -filter:none ${originalPath}/res/upload-dir/${token}/${project_token}/* && rm ${originalPath}/res/deps/${token}/${project_token}/summary.dot`,
           (error, stdout, stderr) => {
             if (error) {
               console.log(`error: ${stdout}`);
