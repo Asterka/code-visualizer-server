@@ -5,17 +5,27 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
     <description>
-        My custom rules
+        Code Visualizer Project
     </description>
 
-
-    <!-- Your rules will come here -->
-    <rule ref="category/java/design.xml/CyclomaticComplexity">
+    <!-- <rule ref="category/java/design.xml/CyclomaticComplexity">
         <properties>
             <property name="classReportLevel" value="1" />
             <property name="methodReportLevel" value="100" />
             <property name="cycloOptions" value="" />
         </properties>
+    </rule> -->
+    <!-- <rule ref="category/java/design.xml/CouplingBetweenObjects">
+        <properties>
+            <property name="threshold" value="5" />
+        </properties>
     </rule>
+     -->
+    <rule ref="category/java/design.xml/ExcessiveMethodLength">
+        <properties>
+            <property name="minimum" value="30.0" />
+        </properties>
+    </rule>
+
 
 </ruleset>

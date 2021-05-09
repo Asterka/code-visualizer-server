@@ -1,19 +1,42 @@
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/LoggerFactory.java:19:	CyclomaticComplexity:	The class 'LoggerFactory' has a total cyclomatic complexity of 71 (highest 11).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/MDC.java:9:	CyclomaticComplexity:	The class 'MDC' has a total cyclomatic complexity of 28 (highest 5).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/MarkerFactory.java:7:	CyclomaticComplexity:	The class 'MarkerFactory' has a total cyclomatic complexity of 5 (highest 2).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/event/EventRecodingLogger.java:8:	CyclomaticComplexity:	The class 'EventRecodingLogger' has a total cyclomatic complexity of 64 (highest 1).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/event/Level.java:3:	CyclomaticComplexity:	The enum 'Level' has a total cyclomatic complexity of 3 (highest 1).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/event/SubstituteLoggingEvent.java:6:	CyclomaticComplexity:	The class 'SubstituteLoggingEvent' has a total cyclomatic complexity of 18 (highest 1).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/BasicMDCAdapter.java:8:	CyclomaticComplexity:	The class 'BasicMDCAdapter' has a total cyclomatic complexity of 16 (highest 4).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/BasicMarker.java:8:	CyclomaticComplexity:	The class 'BasicMarker' has a total cyclomatic complexity of 36 (highest 7).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/BasicMarkerFactory.java:8:	CyclomaticComplexity:	The class 'BasicMarkerFactory' has a total cyclomatic complexity of 10 (highest 5).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/FormattingTuple.java:3:	CyclomaticComplexity:	The class 'FormattingTuple' has a total cyclomatic complexity of 5 (highest 1).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/MarkerIgnoringBase.java:6:	CyclomaticComplexity:	The class 'MarkerIgnoringBase' has a total cyclomatic complexity of 31 (highest 1).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/MessageFormatter.java:6:	CyclomaticComplexity:	The class 'MessageFormatter' has a total cyclomatic complexity of 67 (highest 11).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/NOPLogger.java:3:	CyclomaticComplexity:	The class 'NOPLogger' has a total cyclomatic complexity of 31 (highest 1).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/NOPLoggerFactory.java:6:	CyclomaticComplexity:	The class 'NOPLoggerFactory' has a total cyclomatic complexity of 1 (highest 1).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/NOPMDCAdapter.java:6:	CyclomaticComplexity:	The class 'NOPMDCAdapter' has a total cyclomatic complexity of 6 (highest 1).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/NamedLoggerBase.java:8:	CyclomaticComplexity:	The class 'NamedLoggerBase' has a total cyclomatic complexity of 2 (highest 1).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/SubstituteLogger.java:12:	CyclomaticComplexity:	The class 'SubstituteLogger' has a total cyclomatic complexity of 84 (highest 5).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/SubstituteLoggerFactory.java:12:	CyclomaticComplexity:	The class 'SubstituteLoggerFactory' has a total cyclomatic complexity of 7 (highest 2).
-/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/Util.java:3:	CyclomaticComplexity:	The class 'Util' has a total cyclomatic complexity of 20 (highest 7).
+{
+  "formatVersion": 0,
+  "pmdVersion": "6.34.0",
+  "timestamp": "2021-05-10T01:16:23.213+03:00",
+  "files": [
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/LoggerFactory.java",
+      "violations": [
+        {
+          "beginline": 84,
+          "begincolumn": 24,
+          "endline": 121,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/264d5f9/slf4j-api-1.7.28.jar/org/slf4j/helpers/MessageFormatter.java",
+      "violations": [
+        {
+          "beginline": 49,
+          "begincolumn": 23,
+          "endline": 83,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    }
+  ],
+  "suppressedViolations": [],
+  "processingErrors": [],
+  "configurationErrors": []
+}
