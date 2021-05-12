@@ -23,7 +23,7 @@
      -->
     <rule ref="category/java/design.xml/ExcessiveMethodLength">
         <properties>
-            <property name="minimum" value="30.0" />
+            <property name="minimum" value="1.0" />
         </properties>
     </rule>
 

@@ -28,7 +28,7 @@ app.get("/projects", (req, res) => {
       });
       res.json({ projects: result_folders });
     } else {
-        res.json({err: "You have no uploaded projects"});
+      res.json({ err: "You have no uploaded projects" });
     }
   });
 });
@@ -103,25 +103,23 @@ const depsFromJar = (proj_name, token, project_token, resolve) => {
               console.log(`stderr: ${stderr}`);
               return;
             }
-            getDeps(
-              `./res/deps/${token}/${project_token}`,
-              token,
-              project_token,
-              proj_name
-            ).catch((err) => {
-              console.log(err);
-            });
-
-            setTimeout(() => {
+            (async () => {
+              await getDeps(
+                `./res/deps/${token}/${project_token}`,
+                token,
+                project_token,
+                proj_name
+              ).catch((err) => {
+                console.log(err);
+              });
               return resolve(deps[`${proj_name}.dot`]);
-            }, 1000); //Magic number
+            })();
           }
         );
       }
     }
   );
 };
-
 
 let deps = {};
 
