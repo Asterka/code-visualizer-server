@@ -8,24 +8,26 @@
         Code Visualizer Project
     </description>
 
-    <!-- <rule ref="category/java/design.xml/CyclomaticComplexity">
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
         <properties>
             <property name="classReportLevel" value="1" />
             <property name="methodReportLevel" value="100" />
             <property name="cycloOptions" value="" />
         </properties>
-    </rule> -->
+    </rule>
     <!-- <rule ref="category/java/design.xml/CouplingBetweenObjects">
         <properties>
             <property name="threshold" value="5" />
         </properties>
     </rule>
      -->
+    <!--
     <rule ref="category/java/design.xml/ExcessiveMethodLength">
         <properties>
             <property name="minimum" value="1.0" />
         </properties>
     </rule>
+    -->
 
 
 </ruleset>

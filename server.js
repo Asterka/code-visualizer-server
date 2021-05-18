@@ -7,6 +7,7 @@ const ff = require("node-find-folder");
 const { resolve } = require("path");
 const { v4: uuidv4 } = require("uuid");
 const { rejects } = require("assert");
+const metrics = require("./parser");
 const app = express();
 const originalPath = __dirname;
 
@@ -112,7 +113,9 @@ const depsFromJar = (proj_name, token, project_token, resolve) => {
               ).catch((err) => {
                 console.log(err);
               });
+              await metrics.parseMetric({directory:`./classes/${token}/${project_token}`, ruleset:`./ruleset1.xml`});
               return resolve(deps[`${proj_name}.dot`]);
+              
             })();
           }
         );

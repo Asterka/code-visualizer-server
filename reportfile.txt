@@ -1,10 +1,435 @@
 {
   "formatVersion": 0,
   "pmdVersion": "6.34.0",
-  "timestamp": "2021-05-12T14:54:01.552+03:00",
+  "timestamp": "2021-05-12T16:39:10.403+03:00",
   "files": [
     {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/64e1f34/ant-launcher-1.10.8.jar/org/apache/tools/ant/launch/LaunchException.java",
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/archive/impl/FileZipInput.java",
+      "violations": [
+        {
+          "beginline": 20,
+          "begincolumn": 17,
+          "endline": 28,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 30,
+          "begincolumn": 18,
+          "endline": 36,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 38,
+          "begincolumn": 11,
+          "endline": 45,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 47,
+          "begincolumn": 10,
+          "endline": 49,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 51,
+          "begincolumn": 10,
+          "endline": 53,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/archive/impl/JdkZipEntry.java",
+      "violations": [
+        {
+          "beginline": 15,
+          "begincolumn": 10,
+          "endline": 18,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 20,
+          "begincolumn": 10,
+          "endline": 22,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 24,
+          "begincolumn": 10,
+          "endline": 26,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 28,
+          "begincolumn": 10,
+          "endline": 36,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 38,
+          "begincolumn": 10,
+          "endline": 40,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 42,
+          "begincolumn": 10,
+          "endline": 44,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/archive/impl/StreamZipInput.java",
+      "violations": [
+        {
+          "beginline": 13,
+          "begincolumn": 10,
+          "endline": 15,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 17,
+          "begincolumn": 10,
+          "endline": 19,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 21,
+          "begincolumn": 10,
+          "endline": 23,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/AnyWildcardPatternStep.java",
+      "violations": [
+        {
+          "beginline": 4,
+          "begincolumn": 10,
+          "endline": 6,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 8,
+          "begincolumn": 10,
+          "endline": 10,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/AnythingMatcher.java",
+      "violations": [
+        {
+          "beginline": 4,
+          "begincolumn": 10,
+          "endline": 6,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 8,
+          "begincolumn": 10,
+          "endline": 10,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 12,
+          "begincolumn": 10,
+          "endline": 14,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 16,
+          "begincolumn": 10,
+          "endline": 18,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 20,
+          "begincolumn": 10,
+          "endline": 22,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/EndOfPathMatcher.java",
+      "violations": [
+        {
+          "beginline": 4,
+          "begincolumn": 10,
+          "endline": 6,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 8,
+          "begincolumn": 10,
+          "endline": 10,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 12,
+          "begincolumn": 10,
+          "endline": 14,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 16,
+          "begincolumn": 10,
+          "endline": 18,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 20,
+          "begincolumn": 10,
+          "endline": 22,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/FixedPatternStep.java",
+      "violations": [
+        {
+          "beginline": 8,
+          "begincolumn": 10,
+          "endline": 11,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 13,
+          "begincolumn": 10,
+          "endline": 15,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 17,
+          "begincolumn": 10,
+          "endline": 19,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/FixedStepPathMatcher.java",
+      "violations": [
+        {
+          "beginline": 12,
+          "begincolumn": 10,
+          "endline": 17,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 19,
+          "begincolumn": 10,
+          "endline": 21,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 23,
+          "begincolumn": 10,
+          "endline": 25,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 27,
+          "begincolumn": 10,
+          "endline": 29,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 31,
+          "begincolumn": 10,
+          "endline": 38,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 40,
+          "begincolumn": 10,
+          "endline": 48,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/GreedyPathMatcher.java",
       "violations": [
         {
           "beginline": 6,
@@ -16,16 +441,632 @@
           "ruleset": "Design",
           "priority": 3,
           "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 10,
+          "begincolumn": 10,
+          "endline": 12,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 14,
+          "begincolumn": 10,
+          "endline": 16,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 18,
+          "begincolumn": 10,
+          "endline": 20,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 22,
+          "begincolumn": 10,
+          "endline": 30,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 32,
+          "begincolumn": 10,
+          "endline": 34,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
         }
       ]
     },
     {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/64e1f34/ant-launcher-1.10.8.jar/org/apache/tools/ant/launch/Launcher.java",
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/HasPrefixAndSuffixPatternStep.java",
       "violations": [
+        {
+          "beginline": 8,
+          "begincolumn": 10,
+          "endline": 11,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 13,
+          "begincolumn": 10,
+          "endline": 15,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 17,
+          "begincolumn": 10,
+          "endline": 19,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/HasPrefixPatternStep.java",
+      "violations": [
+        {
+          "beginline": 10,
+          "begincolumn": 10,
+          "endline": 14,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 16,
+          "begincolumn": 10,
+          "endline": 18,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 20,
+          "begincolumn": 10,
+          "endline": 22,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/HasSuffixPatternStep.java",
+      "violations": [
+        {
+          "beginline": 12,
+          "begincolumn": 10,
+          "endline": 14,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 16,
+          "begincolumn": 3,
+          "endline": 21,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 23,
+          "begincolumn": 10,
+          "endline": 25,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 27,
+          "begincolumn": 10,
+          "endline": 29,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 31,
+          "begincolumn": 11,
+          "endline": 33,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/PatternMatcher.java",
+      "violations": [
+        {
+          "beginline": 8,
+          "begincolumn": 10,
+          "endline": 10,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 12,
+          "begincolumn": 10,
+          "endline": 14,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 16,
+          "begincolumn": 10,
+          "endline": 18,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/PatternMatcherFactory.java",
+      "violations": [
+        {
+          "beginline": 12,
+          "begincolumn": 17,
+          "endline": 19,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 21,
+          "begincolumn": 17,
+          "endline": 24,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 26,
+          "begincolumn": 17,
+          "endline": 33,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 35,
+          "begincolumn": 18,
+          "endline": 47,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/PatternStepFactory.java",
+      "violations": [
+        {
+          "beginline": 6,
+          "begincolumn": 17,
+          "endline": 47,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/api/internal/file/pattern/RegExpPatternStep.java",
+      "violations": [
+        {
+          "beginline": 11,
+          "begincolumn": 10,
+          "endline": 13,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 15,
+          "begincolumn": 10,
+          "endline": 17,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 19,
+          "begincolumn": 20,
+          "endline": 35,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 37,
+          "begincolumn": 10,
+          "endline": 40,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/internal/file/DefaultFileHierarchySet.java",
+      "violations": [
+        {
+          "beginline": 8,
+          "begincolumn": 17,
+          "endline": 10,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 12,
+          "begincolumn": 17,
+          "endline": 14,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 16,
+          "begincolumn": 17,
+          "endline": 22,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/internal/file/FileException.java",
+      "violations": [
+        {
+          "beginline": 4,
+          "begincolumn": 10,
+          "endline": 6,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 8,
+          "begincolumn": 10,
+          "endline": 10,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/internal/file/FilePathUtil.java",
+      "violations": [
+        {
+          "beginline": 13,
+          "begincolumn": 17,
+          "endline": 19,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 21,
+          "begincolumn": 17,
+          "endline": 23,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 25,
+          "begincolumn": 17,
+          "endline": 43,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/internal/file/impl/DefaultDeleter.java",
+      "violations": [
+        {
+          "beginline": 37,
+          "begincolumn": 10,
+          "endline": 41,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 43,
+          "begincolumn": 10,
+          "endline": 45,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 47,
+          "begincolumn": 10,
+          "endline": 53,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 55,
+          "begincolumn": 10,
+          "endline": 57,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 59,
+          "begincolumn": 10,
+          "endline": 72,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 74,
+          "begincolumn": 10,
+          "endline": 80,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 82,
+          "begincolumn": 11,
+          "endline": 90,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 92,
+          "begincolumn": 11,
+          "endline": 111,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 113,
+          "begincolumn": 11,
+          "endline": 115,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 117,
+          "begincolumn": 13,
+          "endline": 119,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 121,
+          "begincolumn": 11,
+          "endline": 132,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 134,
+          "begincolumn": 11,
+          "endline": 136,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 138,
+          "begincolumn": 11,
+          "endline": 168,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 170,
+          "begincolumn": 18,
+          "endline": 187,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/848725f/gradle-files-6.6.1.jar/org/gradle/internal/file/impl/DefaultFileMetadata.java",
+      "violations": [
+        {
+          "beginline": 23,
+          "begincolumn": 11,
+          "endline": 28,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
         {
           "beginline": 30,
           "begincolumn": 17,
-          "endline": 49,
+          "endline": 32,
           "endcolumn": 3,
           "description": "Avoid really long methods.",
           "rule": "ExcessiveMethodLength",
@@ -34,101 +1075,52 @@
           "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
         },
         {
-          "beginline": 53,
-          "begincolumn": 11,
-          "endline": 71,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 73,
-          "begincolumn": 11,
-          "endline": 171,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 173,
-          "begincolumn": 11,
-          "endline": 180,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 182,
-          "begincolumn": 11,
-          "endline": 192,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 194,
-          "begincolumn": 11,
-          "endline": 197,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 199,
-          "begincolumn": 11,
-          "endline": 210,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 212,
-          "begincolumn": 11,
-          "endline": 216,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 218,
-          "begincolumn": 11,
-          "endline": 221,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/64e1f34/ant-launcher-1.10.8.jar/org/apache/tools/ant/launch/Locator.java",
-      "violations": [
-        {
-          "beginline": 61,
+          "beginline": 34,
           "begincolumn": 17,
+          "endline": 42,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 44,
+          "begincolumn": 17,
+          "endline": 52,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 54,
+          "begincolumn": 10,
+          "endline": 56,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 58,
+          "begincolumn": 10,
+          "endline": 60,
+          "endcolumn": 3,
+          "description": "Avoid really long methods.",
+          "rule": "ExcessiveMethodLength",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
+        },
+        {
+          "beginline": 62,
+          "begincolumn": 10,
           "endline": 64,
           "endcolumn": 3,
           "description": "Avoid really long methods.",
@@ -139,8 +1131,8 @@
         },
         {
           "beginline": 66,
-          "begincolumn": 17,
-          "endline": 88,
+          "begincolumn": 10,
+          "endline": 68,
           "endcolumn": 3,
           "description": "Avoid really long methods.",
           "rule": "ExcessiveMethodLength",
@@ -149,9 +1141,9 @@
           "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
         },
         {
-          "beginline": 90,
-          "begincolumn": 17,
-          "endline": 122,
+          "beginline": 70,
+          "begincolumn": 10,
+          "endline": 77,
           "endcolumn": 3,
           "description": "Avoid really long methods.",
           "rule": "ExcessiveMethodLength",
@@ -160,75 +1152,9 @@
           "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
         },
         {
-          "beginline": 124,
-          "begincolumn": 17,
-          "endline": 128,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 130,
-          "begincolumn": 17,
-          "endline": 155,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 157,
-          "begincolumn": 17,
-          "endline": 198,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 201,
-          "begincolumn": 17,
-          "endline": 203,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 205,
-          "begincolumn": 17,
-          "endline": 234,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 236,
-          "begincolumn": 17,
-          "endline": 238,
-          "endcolumn": 3,
-          "description": "Avoid really long methods.",
-          "rule": "ExcessiveMethodLength",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#excessivemethodlength"
-        },
-        {
-          "beginline": 240,
-          "begincolumn": 17,
-          "endline": 265,
+          "beginline": 79,
+          "begincolumn": 10,
+          "endline": 85,
           "endcolumn": 3,
           "description": "Avoid really long methods.",
           "rule": "ExcessiveMethodLength",
