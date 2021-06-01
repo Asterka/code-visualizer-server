@@ -2,20 +2,24 @@ const express = require("express");
 const cors = require("cors");
 const fileUpload = require("express-fileupload");
 const fs = require("fs");
-const { exec } = require("child_process");
+const exec = require("await-exec");
 const ff = require("node-find-folder");
 const { resolve } = require("path");
 const { v4: uuidv4 } = require("uuid");
 const { rejects } = require("assert");
-const metrics = require("./parser");
+const metrics = require("./projectMetrics");
+const projectUtils = require("./projectUtils");
+
 const app = express();
 const originalPath = __dirname;
 
 app.use(cors());
 app.use(fileUpload());
 
-// Project GET endpoint
+//Get the proejct metrics themselves
+app.use("/metrics", express.static("reports"));
 
+// Get general info about the projects
 app.get("/projects", (req, res) => {
   let user_token = req.query.token;
 
@@ -58,77 +62,57 @@ app.post("/upload", (req, res) => {
         console.log(`stderr: ${stderr}`);
         return;
       }
+    }
+  )
+  file.mv(
+    `${__dirname}/res/upload-dir/${token}/${project_token}/${file.name}`,
+    async (err) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).send(err);
+      }
+      await projectUtils.decompileUserProject(fileName, token, project_token);
+      await projectUtils.generateDependecies(token, project_token);
 
-      file.mv(
-        `${__dirname}/res/upload-dir/${token}/${project_token}/${file.name}`,
-        (err) => {
-          if (err) {
-            console.error(err);
-            return res.status(500).send(err);
-          }
-          let result = new Promise((resolve, reject) => {
-            depsFromJar(fileName, token, project_token, resolve);
-          });
-          result.then((result) => {
-            res.json({
-              fileName: file.name,
-              filePath: `/upload-dir/${token}/${project_token}/${file.name}`,
-              data: result,
-            });
-          });
-        }
-      );
+      let result = await depsFromJar(fileName, token, project_token);
+
+      res.json({
+        fileName: file.name,
+        filePath: `/upload-dir/${token}/${project_token}/${file.name}`,
+        data: result,
+      });
     }
   );
 });
 
 app.listen(5000, () => console.log("Server Started..."));
 
-const depsFromJar = (proj_name, token, project_token, resolve) => {
-  exec(
-    `java -jar ./project-files/jd-cmd/jd-cli.jar ./res/upload-dir/${token}/${project_token}/${proj_name} -ods ./classes/${token}/${project_token} && cd ${originalPath}`,
-    (err, stdout, stderr) => {
-      if (err) {
-        console.log(
-          `Failed while removing a directory and parsing classes from a jar:\n\n${stdout}`
-        );
-      } else {
-        exec(
-          `jdeps --dot-output ${originalPath}/res/deps/${token}/${project_token} -verbose:class -R -filter:none ${originalPath}/res/upload-dir/${token}/${project_token}/* && rm ${originalPath}/res/deps/${token}/${project_token}/summary.dot`,
-          (error, stdout, stderr) => {
-            if (error) {
-              console.log(`error: ${stdout}`);
-              return;
-            }
-            if (stderr) {
-              console.log(`stderr: ${stderr}`);
-              return;
-            }
-            (async () => {
-              await getDeps(
-                `./res/deps/${token}/${project_token}`,
-                token,
-                project_token,
-                proj_name
-              ).catch((err) => {
-                console.log(err);
-              });
-              await metrics.parseMetric({directory:`./classes/${token}/${project_token}`, ruleset:`./ruleset1.xml`});
-              return resolve(deps[`${proj_name}.dot`]);
-              
-            })();
-          }
-        );
-      }
-    }
-  );
+
+const depsFromJar = async (proj_name, token, project_token) => {
+  await getDeps(
+    `./res/deps/${token}/${project_token}`,
+    token,
+    project_token,
+    proj_name
+  ).catch((err) => {
+    console.log(err);
+  });
+  console.log(deps);
+  await metrics.parseMetric({
+    directory: `./classes/${token}/${project_token}`,
+    ruleset: `./ruleset1.xml`,
+  }).catch((err)=>{
+    console.log(err)
+  })
+  return deps[`${proj_name}.dot`];
 };
 
 let deps = {};
 
-async function getDeps(path, token, project_token, proj_name) {
+const getDeps = async(path, token, project_token, proj_name) => {
   const dir = await fs.promises.opendir(path);
   for await (const dirent of dir) {
+    console.log(dirent)
     fs.readFile(
       __dirname + `/res/deps/${token}/${project_token}/${dirent.name}`,
       function (err, data) {
