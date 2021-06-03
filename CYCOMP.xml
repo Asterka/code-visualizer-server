@@ -5,7 +5,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
     <description>
-        Code Visualizer Project
+        CyclomaticComplexity
     </description>
 
     <rule ref="category/java/design.xml/CyclomaticComplexity">
@@ -15,19 +15,4 @@
             <property name="cycloOptions" value="" />
         </properties>
     </rule>
-    <!-- <rule ref="category/java/design.xml/CouplingBetweenObjects">
-        <properties>
-            <property name="threshold" value="5" />
-        </properties>
-    </rule>
-     -->
-    <!--
-    <rule ref="category/java/design.xml/ExcessiveMethodLength">
-        <properties>
-            <property name="minimum" value="1.0" />
-        </properties>
-    </rule>
-    -->
-
-
 </ruleset>

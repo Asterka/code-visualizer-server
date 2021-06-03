@@ -142,7 +142,9 @@ const dependencies = async (proj_name, token, project_token) => {
   await metrics
     .parseMetric({
       directory: `./classes/${token}/${project_token}`,
-      ruleset: `./ruleset1.xml`,
+      ruleset: [`LOC.xml`, 'CYCOMP.xml'],
+      user_token: token,
+      project_token: project_token
     })
     .catch((err) => {
       console.log(err);
