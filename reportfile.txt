@@ -1,689 +1,17 @@
 {
   "formatVersion": 0,
   "pmdVersion": "6.34.0",
-  "timestamp": "2021-06-01T12:25:58.361+03:00",
+  "timestamp": "2021-06-04T00:21:39.584+03:00",
   "files": [
     {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AbstractBaseDirFileResolver.java",
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/AnnotationVisitor.java",
       "violations": [
         {
-          "beginline": 7,
-          "begincolumn": 17,
-          "endline": 32,
-          "endcolumn": 1,
-          "description": "The class \u0027AbstractBaseDirFileResolver\u0027 has a total cyclomatic complexity of 10 (highest 8).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AbstractFileCollection.java",
-      "violations": [
-        {
-          "beginline": 30,
-          "begincolumn": 17,
-          "endline": 172,
-          "endcolumn": 1,
-          "description": "The class \u0027AbstractFileCollection\u0027 has a total cyclomatic complexity of 37 (highest 5).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AbstractFileResolver.java",
-      "violations": [
-        {
-          "beginline": 13,
-          "begincolumn": 17,
-          "endline": 84,
-          "endcolumn": 1,
-          "description": "The class \u0027AbstractFileResolver\u0027 has a total cyclomatic complexity of 26 (highest 14).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AbstractFileTree.java",
-      "violations": [
-        {
-          "beginline": 21,
-          "begincolumn": 17,
-          "endline": 79,
-          "endcolumn": 1,
-          "description": "The class \u0027AbstractFileTree\u0027 has a total cyclomatic complexity of 13 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AbstractFileTreeElement.java",
-      "violations": [
-        {
-          "beginline": 15,
-          "begincolumn": 17,
-          "endline": 89,
-          "endcolumn": 1,
-          "description": "The class \u0027AbstractFileTreeElement\u0027 has a total cyclomatic complexity of 18 (highest 4).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AbstractOpaqueFileCollection.java",
-      "violations": [
-        {
-          "beginline": 9,
-          "begincolumn": 17,
-          "endline": 29,
-          "endcolumn": 1,
-          "description": "The class \u0027AbstractOpaqueFileCollection\u0027 has a total cyclomatic complexity of 5 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AntFileCollectionBuilder.java",
-      "violations": [
-        {
-          "beginline": 8,
-          "begincolumn": 8,
-          "endline": 20,
-          "endcolumn": 1,
-          "description": "The class \u0027AntFileCollectionBuilder\u0027 has a total cyclomatic complexity of 3 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AntFileCollectionMatchingTaskBuilder.java",
-      "violations": [
-        {
-          "beginline": 12,
-          "begincolumn": 8,
-          "endline": 31,
-          "endcolumn": 1,
-          "description": "The class \u0027AntFileCollectionMatchingTaskBuilder\u0027 has a total cyclomatic complexity of 3 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AntFileSetBuilder.java",
-      "violations": [
-        {
-          "beginline": 9,
-          "begincolumn": 8,
-          "endline": 25,
-          "endcolumn": 1,
-          "description": "The class \u0027AntFileSetBuilder\u0027 has a total cyclomatic complexity of 5 (highest 4).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AntFileTreeBuilder.java",
-      "violations": [
-        {
-          "beginline": 9,
-          "begincolumn": 8,
-          "endline": 21,
-          "endcolumn": 1,
-          "description": "The class \u0027AntFileTreeBuilder\u0027 has a total cyclomatic complexity of 3 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/AttributeBasedFileVisitDetails.java",
-      "violations": [
-        {
-          "beginline": 10,
-          "begincolumn": 8,
-          "endline": 25,
-          "endcolumn": 1,
-          "description": "The class \u0027AttributeBasedFileVisitDetails\u0027 has a total cyclomatic complexity of 3 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/BaseDirFileResolver.java",
-      "violations": [
-        {
-          "beginline": 5,
-          "begincolumn": 8,
-          "endline": 16,
-          "endcolumn": 1,
-          "description": "The class \u0027BaseDirFileResolver\u0027 has a total cyclomatic complexity of 2 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/CompositeFileCollection.java",
-      "violations": [
-        {
-          "beginline": 15,
-          "begincolumn": 17,
-          "endline": 64,
-          "endcolumn": 1,
-          "description": "The class \u0027CompositeFileCollection\u0027 has a total cyclomatic complexity of 14 (highest 3).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/CompositeFileTree.java",
-      "violations": [
-        {
-          "beginline": 16,
-          "begincolumn": 17,
-          "endline": 76,
-          "endcolumn": 1,
-          "description": "The class \u0027CompositeFileTree\u0027 has a total cyclomatic complexity of 14 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/DefaultCompositeFileTree.java",
-      "violations": [
-        {
-          "beginline": 9,
-          "begincolumn": 8,
-          "endline": 25,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultCompositeFileTree\u0027 has a total cyclomatic complexity of 4 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/DefaultFileCollectionFactory.java",
-      "violations": [
-        {
-          "beginline": 29,
-          "begincolumn": 8,
-          "endline": 144,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultFileCollectionFactory\u0027 has a total cyclomatic complexity of 30 (highest 4).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/DefaultFilePropertyFactory.java",
-      "violations": [
-        {
-          "beginline": 11,
-          "begincolumn": 8,
-          "endline": 41,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultFilePropertyFactory\u0027 has a total cyclomatic complexity of 5 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/DefaultFileSystemLocation.java",
-      "violations": [
-        {
-          "beginline": 6,
-          "begincolumn": 8,
-          "endline": 33,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultFileSystemLocation\u0027 has a total cyclomatic complexity of 8 (highest 4).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/DefaultFileTreeElement.java",
-      "violations": [
-        {
-          "beginline": 11,
-          "begincolumn": 8,
-          "endline": 61,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultFileTreeElement\u0027 has a total cyclomatic complexity of 10 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/DefaultFileVisitDetails.java",
-      "violations": [
-        {
-          "beginline": 10,
-          "begincolumn": 8,
-          "endline": 25,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultFileVisitDetails\u0027 has a total cyclomatic complexity of 3 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/FileCollectionBackedFileTree.java",
-      "violations": [
-        {
-          "beginline": 12,
-          "begincolumn": 8,
-          "endline": 59,
-          "endcolumn": 1,
-          "description": "The class \u0027FileCollectionBackedFileTree\u0027 has a total cyclomatic complexity of 9 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/FileOrUriNotationConverter.java",
-      "violations": [
-        {
-          "beginline": 21,
-          "begincolumn": 8,
-          "endline": 122,
-          "endcolumn": 1,
-          "description": "The class \u0027FileOrUriNotationConverter\u0027 has a total cyclomatic complexity of 25 (highest 17).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/FileSystemSubset.java",
-      "violations": [
-        {
-          "beginline": 15,
-          "begincolumn": 8,
-          "endline": 70,
-          "endcolumn": 1,
-          "description": "The class \u0027FileSystemSubset\u0027 has a total cyclomatic complexity of 13 (highest 6).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/FilteredFileCollection.java",
-      "violations": [
-        {
-          "beginline": 14,
-          "begincolumn": 8,
-          "endline": 60,
-          "endcolumn": 1,
-          "description": "The class \u0027FilteredFileCollection\u0027 has a total cyclomatic complexity of 10 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/FilteredFileTree.java",
-      "violations": [
-        {
-          "beginline": 11,
-          "begincolumn": 8,
-          "endline": 49,
-          "endcolumn": 1,
-          "description": "The class \u0027FilteredFileTree\u0027 has a total cyclomatic complexity of 7 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/IdentityFileResolver.java",
-      "violations": [
-        {
-          "beginline": 5,
-          "begincolumn": 8,
-          "endline": 22,
-          "endcolumn": 1,
-          "description": "The class \u0027IdentityFileResolver\u0027 has a total cyclomatic complexity of 8 (highest 5).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/ImmutableDirectoryTree.java",
-      "violations": [
-        {
-          "beginline": 7,
-          "begincolumn": 14,
-          "endline": 56,
-          "endcolumn": 1,
-          "description": "The class \u0027ImmutableDirectoryTree\u0027 has a total cyclomatic complexity of 18 (highest 8).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/ImmutablePatternSet.java",
-      "violations": [
-        {
-          "beginline": 9,
-          "begincolumn": 8,
-          "endline": 72,
-          "endcolumn": 1,
-          "description": "The class \u0027ImmutablePatternSet\u0027 has a total cyclomatic complexity of 29 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/SubtractingFileCollection.java",
-      "violations": [
-        {
-          "beginline": 9,
-          "begincolumn": 8,
-          "endline": 45,
-          "endcolumn": 1,
-          "description": "The class \u0027SubtractingFileCollection\u0027 has a total cyclomatic complexity of 7 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/UnauthorizedFileVisitDetails.java",
-      "violations": [
-        {
-          "beginline": 9,
-          "begincolumn": 8,
-          "endline": 64,
-          "endcolumn": 1,
-          "description": "The class \u0027UnauthorizedFileVisitDetails\u0027 has a total cyclomatic complexity of 20 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/UnionFileCollection.java",
-      "violations": [
-        {
-          "beginline": 11,
-          "begincolumn": 8,
-          "endline": 61,
-          "endcolumn": 1,
-          "description": "The class \u0027UnionFileCollection\u0027 has a total cyclomatic complexity of 12 (highest 4).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/UnionFileTree.java",
-      "violations": [
-        {
-          "beginline": 11,
-          "begincolumn": 8,
-          "endline": 43,
-          "endcolumn": 1,
-          "description": "The class \u0027UnionFileTree\u0027 has a total cyclomatic complexity of 9 (highest 3).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/DefaultConfigurableFileCollection.java",
-      "violations": [
-        {
-          "beginline": 26,
-          "begincolumn": 8,
-          "endline": 223,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultConfigurableFileCollection\u0027 has a total cyclomatic complexity of 57 (highest 7).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/DefaultConfigurableFileTree.java",
-      "violations": [
-        {
-          "beginline": 21,
-          "begincolumn": 8,
-          "endline": 143,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultConfigurableFileTree\u0027 has a total cyclomatic complexity of 25 (highest 3).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/DefaultDirectoryFileTreeFactory.java",
-      "violations": [
-        {
-          "beginline": 9,
-          "begincolumn": 8,
-          "endline": 31,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultDirectoryFileTreeFactory\u0027 has a total cyclomatic complexity of 4 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/DefaultDirectoryWalker.java",
-      "violations": [
-        {
-          "beginline": 21,
-          "begincolumn": 8,
-          "endline": 41,
-          "endcolumn": 1,
-          "description": "The class \u0027DefaultDirectoryWalker\u0027 has a total cyclomatic complexity of 5 (highest 3).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/DirectoryFileTree.java",
-      "violations": [
-        {
-          "beginline": 26,
-          "begincolumn": 8,
-          "endline": 133,
-          "endcolumn": 1,
-          "description": "The class \u0027DirectoryFileTree\u0027 has a total cyclomatic complexity of 24 (highest 3).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/DirectoryTrees.java",
-      "violations": [
-        {
-          "beginline": 11,
-          "begincolumn": 17,
-          "endline": 19,
-          "endcolumn": 1,
-          "description": "The class \u0027DirectoryTrees\u0027 has a total cyclomatic complexity of 2 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/FileCollectionAdapter.java",
-      "violations": [
-        {
-          "beginline": 10,
-          "begincolumn": 8,
-          "endline": 34,
-          "endcolumn": 1,
-          "description": "The class \u0027FileCollectionAdapter\u0027 has a total cyclomatic complexity of 6 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/FileTreeAdapter.java",
-      "violations": [
-        {
-          "beginline": 15,
-          "begincolumn": 8,
-          "endline": 70,
-          "endcolumn": 1,
-          "description": "The class \u0027FileTreeAdapter\u0027 has a total cyclomatic complexity of 16 (highest 4).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/FilteredMinimalFileTree.java",
-      "violations": [
-        {
-          "beginline": 11,
-          "begincolumn": 8,
-          "endline": 48,
-          "endcolumn": 1,
-          "description": "The class \u0027FilteredMinimalFileTree\u0027 has a total cyclomatic complexity of 7 (highest 1).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/GeneratedSingletonFileTree.java",
-      "violations": [
-        {
-          "beginline": 17,
-          "begincolumn": 8,
-          "endline": 76,
-          "endcolumn": 1,
-          "description": "The class \u0027GeneratedSingletonFileTree\u0027 has a total cyclomatic complexity of 11 (highest 2).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/ImmutableFileCollection.java",
-      "violations": [
-        {
-          "beginline": 11,
+          "beginline": 3,
           "begincolumn": 17,
           "endline": 47,
           "endcolumn": 1,
-          "description": "The class \u0027ImmutableFileCollection\u0027 has a total cyclomatic complexity of 8 (highest 2).",
+          "description": "The class \u0027AnnotationVisitor\u0027 has a total cyclomatic complexity of 19 (highest 8).",
           "rule": "CyclomaticComplexity",
           "ruleset": "Design",
           "priority": 3,
@@ -692,14 +20,14 @@
       ]
     },
     {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/LazilyInitializedFileCollection.java",
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/AnnotationWriter.java",
       "violations": [
         {
-          "beginline": 8,
-          "begincolumn": 17,
-          "endline": 18,
+          "beginline": 3,
+          "begincolumn": 7,
+          "endline": 244,
           "endcolumn": 1,
-          "description": "The class \u0027LazilyInitializedFileCollection\u0027 has a total cyclomatic complexity of 2 (highest 2).",
+          "description": "The class \u0027AnnotationWriter\u0027 has a total cyclomatic complexity of 64 (highest 26).",
           "rule": "CyclomaticComplexity",
           "ruleset": "Design",
           "priority": 3,
@@ -708,14 +36,14 @@
       ]
     },
     {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/ListBackedFileSet.java",
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/Attribute.java",
       "violations": [
         {
-          "beginline": 8,
+          "beginline": 3,
           "begincolumn": 8,
-          "endline": 28,
+          "endline": 116,
           "endcolumn": 1,
-          "description": "The class \u0027ListBackedFileSet\u0027 has a total cyclomatic complexity of 5 (highest 3).",
+          "description": "The class \u0027Attribute\u0027 has a total cyclomatic complexity of 24 (highest 5).",
           "rule": "CyclomaticComplexity",
           "ruleset": "Design",
           "priority": 3,
@@ -724,14 +52,14 @@
       ]
     },
     {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/ProviderBackedFileCollection.java",
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/ByteVector.java",
       "violations": [
         {
-          "beginline": 14,
+          "beginline": 3,
           "begincolumn": 8,
-          "endline": 42,
+          "endline": 202,
           "endcolumn": 1,
-          "description": "The class \u0027ProviderBackedFileCollection\u0027 has a total cyclomatic complexity of 5 (highest 2).",
+          "description": "The class \u0027ByteVector\u0027 has a total cyclomatic complexity of 44 (highest 13).",
           "rule": "CyclomaticComplexity",
           "ruleset": "Design",
           "priority": 3,
@@ -740,46 +68,25 @@
       ]
     },
     {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/ReproducibleDirectoryWalker.java",
-      "violations": [
-        {
-          "beginline": 20,
-          "begincolumn": 8,
-          "endline": 66,
-          "endcolumn": 1,
-          "description": "The class \u0027ReproducibleDirectoryWalker\u0027 has a total cyclomatic complexity of 16 (highest 13).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/SingleIncludePatternFileTree.java",
-      "violations": [
-        {
-          "beginline": 27,
-          "begincolumn": 8,
-          "endline": 123,
-          "endcolumn": 1,
-          "description": "The class \u0027SingleIncludePatternFileTree\u0027 has a total cyclomatic complexity of 28 (highest 12).",
-          "rule": "CyclomaticComplexity",
-          "ruleset": "Design",
-          "priority": 3,
-          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
-        }
-      ]
-    },
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/SingletonFileSet.java",
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/ClassReader.java",
       "violations": [
         {
           "beginline": 7,
           "begincolumn": 8,
-          "endline": 24,
+          "endline": 2352,
           "endcolumn": 1,
-          "description": "The class \u0027SingletonFileSet\u0027 has a total cyclomatic complexity of 3 (highest 1).",
+          "description": "The class \u0027ClassReader\u0027 has a total cyclomatic complexity of 910 (highest 534).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        },
+        {
+          "beginline": 793,
+          "begincolumn": 11,
+          "endline": 1668,
+          "endcolumn": 3,
+          "description": "The method \u0027readCode(MethodVisitor, Context, int)\u0027 has a cyclomatic complexity of 534.",
           "rule": "CyclomaticComplexity",
           "ruleset": "Design",
           "priority": 3,
@@ -788,14 +95,457 @@
       ]
     },
     {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/UnpackingVisitor.java",
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/ClassTooLargeException.java",
       "violations": [
         {
-          "beginline": 14,
+          "beginline": 3,
+          "begincolumn": 14,
+          "endline": 23,
+          "endcolumn": 1,
+          "description": "The class \u0027ClassTooLargeException\u0027 has a total cyclomatic complexity of 3 (highest 1).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/ClassVisitor.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 17,
+          "endline": 115,
+          "endcolumn": 1,
+          "description": "The class \u0027ClassVisitor\u0027 has a total cyclomatic complexity of 51 (highest 8).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/ClassWriter.java",
+      "violations": [
+        {
+          "beginline": 3,
           "begincolumn": 8,
+          "endline": 553,
+          "endcolumn": 1,
+          "description": "The class \u0027ClassWriter\u0027 has a total cyclomatic complexity of 120 (highest 45).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/ConstantDynamic.java",
+      "violations": [
+        {
+          "beginline": 5,
+          "begincolumn": 14,
           "endline": 78,
           "endcolumn": 1,
-          "description": "The class \u0027UnpackingVisitor\u0027 has a total cyclomatic complexity of 20 (highest 17).",
+          "description": "The class \u0027ConstantDynamic\u0027 has a total cyclomatic complexity of 15 (highest 3).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/Constants.java",
+      "violations": [
+        {
+          "beginline": 8,
+          "begincolumn": 7,
+          "endline": 253,
+          "endcolumn": 1,
+          "description": "The class \u0027Constants\u0027 has a total cyclomatic complexity of 16 (highest 12).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/CurrentFrame.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 7,
+          "endline": 14,
+          "endcolumn": 1,
+          "description": "The class \u0027CurrentFrame\u0027 has a total cyclomatic complexity of 2 (highest 1).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/Edge.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 7,
+          "endline": 19,
+          "endcolumn": 1,
+          "description": "The class \u0027Edge\u0027 has a total cyclomatic complexity of 1 (highest 1).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/FieldVisitor.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 17,
+          "endline": 44,
+          "endcolumn": 1,
+          "description": "The class \u0027FieldVisitor\u0027 has a total cyclomatic complexity of 19 (highest 8).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/FieldWriter.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 7,
+          "endline": 113,
+          "endcolumn": 1,
+          "description": "The class \u0027FieldWriter\u0027 has a total cyclomatic complexity of 27 (highest 14).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/Frame.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 1,
+          "endline": 951,
+          "endcolumn": 1,
+          "description": "The class \u0027Frame\u0027 has a total cyclomatic complexity of 354 (highest 195).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        },
+        {
+          "beginline": 370,
+          "begincolumn": 3,
+          "endline": 726,
+          "endcolumn": 3,
+          "description": "The method \u0027execute(int, int, Symbol, SymbolTable)\u0027 has a cyclomatic complexity of 195.",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/Handle.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 14,
+          "endline": 69,
+          "endcolumn": 1,
+          "description": "The class \u0027Handle\u0027 has a total cyclomatic complexity of 14 (highest 3).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/Handler.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 7,
+          "endline": 76,
+          "endcolumn": 1,
+          "description": "The class \u0027Handler\u0027 has a total cyclomatic complexity of 15 (highest 8).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/Label.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 8,
+          "endline": 210,
+          "endcolumn": 1,
+          "description": "The class \u0027Label\u0027 has a total cyclomatic complexity of 41 (highest 7).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/MethodTooLargeException.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 14,
+          "endline": 37,
+          "endcolumn": 1,
+          "description": "The class \u0027MethodTooLargeException\u0027 has a total cyclomatic complexity of 5 (highest 1).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/MethodVisitor.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 17,
+          "endline": 214,
+          "endcolumn": 1,
+          "description": "The class \u0027MethodVisitor\u0027 has a total cyclomatic complexity of 97 (highest 10).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/MethodWriter.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 7,
+          "endline": 1316,
+          "endcolumn": 1,
+          "description": "The class \u0027MethodWriter\u0027 has a total cyclomatic complexity of 365 (highest 43).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/ModuleVisitor.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 17,
+          "endline": 60,
+          "endcolumn": 1,
+          "description": "The class \u0027ModuleVisitor\u0027 has a total cyclomatic complexity of 25 (highest 8).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/ModuleWriter.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 7,
+          "endline": 156,
+          "endcolumn": 1,
+          "description": "The class \u0027ModuleWriter\u0027 has a total cyclomatic complexity of 24 (highest 3).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/RecordComponentVisitor.java",
+      "violations": [
+        {
+          "beginline": 4,
+          "begincolumn": 17,
+          "endline": 54,
+          "endcolumn": 1,
+          "description": "The class \u0027RecordComponentVisitor\u0027 has a total cyclomatic complexity of 18 (highest 8).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/RecordComponentWriter.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 7,
+          "endline": 95,
+          "endcolumn": 1,
+          "description": "The class \u0027RecordComponentWriter\u0027 has a total cyclomatic complexity of 20 (highest 9).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/Symbol.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 10,
+          "endline": 74,
+          "endcolumn": 1,
+          "description": "The class \u0027Symbol\u0027 has a total cyclomatic complexity of 3 (highest 2).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/SymbolTable.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 7,
+          "endline": 635,
+          "endcolumn": 1,
+          "description": "The class \u0027SymbolTable\u0027 has a total cyclomatic complexity of 176 (highest 23).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/Type.java",
+      "violations": [
+        {
+          "beginline": 6,
+          "begincolumn": 14,
+          "endline": 502,
+          "endcolumn": 1,
+          "description": "The class \u0027Type\u0027 has a total cyclomatic complexity of 176 (highest 39).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/TypePath.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 14,
+          "endline": 107,
+          "endcolumn": 1,
+          "description": "The class \u0027TypePath\u0027 has a total cyclomatic complexity of 28 (highest 15).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/TypeReference.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 8,
+          "endline": 155,
+          "endcolumn": 1,
+          "description": "The class \u0027TypeReference\u0027 has a total cyclomatic complexity of 40 (highest 22).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/signature/SignatureReader.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 8,
+          "endline": 124,
+          "endcolumn": 1,
+          "description": "The class \u0027SignatureReader\u0027 has a total cyclomatic complexity of 39 (highest 26).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/signature/SignatureVisitor.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 17,
+          "endline": 67,
+          "endcolumn": 1,
+          "description": "The class \u0027SignatureVisitor\u0027 has a total cyclomatic complexity of 23 (highest 7).",
+          "rule": "CyclomaticComplexity",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#cyclomaticcomplexity"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/4f9cd58/asm-7.3.1.jar/org/objectweb/asm/signature/SignatureWriter.java",
+      "violations": [
+        {
+          "beginline": 3,
+          "begincolumn": 8,
+          "endline": 132,
+          "endcolumn": 1,
+          "description": "The class \u0027SignatureWriter\u0027 has a total cyclomatic complexity of 28 (highest 3).",
           "rule": "CyclomaticComplexity",
           "ruleset": "Design",
           "priority": 3,
@@ -805,12 +555,6 @@
     }
   ],
   "suppressedViolations": [],
-  "processingErrors": [
-    {
-      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/FileBackedDirectoryFileTree.java",
-      "message": "PMDException: Error while parsing /home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/FileBackedDirectoryFileTree.java",
-      "detail": "net.sourceforge.pmd.PMDException: Error while parsing /home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/9113d16/gradle-file-collections-6.6.1.jar/org/gradle/api/internal/file/collections/FileBackedDirectoryFileTree.java\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:116)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:95)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:57)\n\tat net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)\n\tat net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: net.sourceforge.pmd.lang.java.ast.ParseException: Encountered \" \")\" \") \"\" at line 11, column 93.\nWas expecting one of:\n    \"++\" ...\n    \"--\" ...\n    \"+\" ...\n    \"-\" ...\n    \"+\" ...\n    \"-\" ...\n    \"++\" ...\n    \"--\" ...\n    \"+\" ...\n    \"-\" ...\n    \"++\" ...\n    \"--\" ...\n    \n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.generateParseException(JavaParser.java:13326)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.jj_consume_token(JavaParser.java:13210)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.UnaryExpression(JavaParser.java:4002)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.MultiplicativeExpression(JavaParser.java:3915)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.AdditiveExpression(JavaParser.java:3862)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ShiftExpression(JavaParser.java:3805)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.RelationalExpression(JavaParser.java:3744)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.InstanceOfExpression(JavaParser.java:3649)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.EqualityExpression(JavaParser.java:3540)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.AndExpression(JavaParser.java:3500)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ExclusiveOrExpression(JavaParser.java:3460)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.InclusiveOrExpression(JavaParser.java:3420)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ConditionalAndExpression(JavaParser.java:3380)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ConditionalOrExpression(JavaParser.java:3340)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ConditionalExpression(JavaParser.java:3302)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Expression(JavaParser.java:3159)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ArgumentList(JavaParser.java:5145)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Arguments(JavaParser.java:5099)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.PrimarySuffix(JavaParser.java:4925)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.PrimaryExpression(JavaParser.java:4411)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.PostfixExpression(JavaParser.java:4225)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.UnaryExpressionNotPlusMinus(JavaParser.java:4123)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.UnaryExpression(JavaParser.java:4000)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.MultiplicativeExpression(JavaParser.java:3915)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.AdditiveExpression(JavaParser.java:3862)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ShiftExpression(JavaParser.java:3805)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.RelationalExpression(JavaParser.java:3744)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.InstanceOfExpression(JavaParser.java:3649)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.EqualityExpression(JavaParser.java:3540)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.AndExpression(JavaParser.java:3500)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ExclusiveOrExpression(JavaParser.java:3460)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.InclusiveOrExpression(JavaParser.java:3420)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ConditionalAndExpression(JavaParser.java:3380)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ConditionalOrExpression(JavaParser.java:3340)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ConditionalExpression(JavaParser.java:3302)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Expression(JavaParser.java:3159)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ArgumentList(JavaParser.java:5145)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Arguments(JavaParser.java:5099)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.PrimarySuffix(JavaParser.java:4925)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.PrimaryExpression(JavaParser.java:4411)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.PostfixExpression(JavaParser.java:4225)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.StatementExpression(JavaParser.java:5745)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Statement(JavaParser.java:5373)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.BlockStatement(JavaParser.java:5571)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ConstructorDeclaration(JavaParser.java:2366)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceBodyDeclaration(JavaParser.java:1781)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceBody(JavaParser.java:1738)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceDeclaration(JavaParser.java:879)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.TypeDeclaration(JavaParser.java:781)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.CompilationUnit(JavaParser.java:501)\n\tat net.sourceforge.pmd.lang.java.AbstractJavaParser.parse(AbstractJavaParser.java:62)\n\tat net.sourceforge.pmd.SourceCodeProcessor.parse(SourceCodeProcessor.java:127)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:191)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:113)\n\t... 10 more\n"
-    }
-  ],
+  "processingErrors": [],
   "configurationErrors": []
 }
