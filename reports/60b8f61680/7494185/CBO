@@ -1,0 +1,170 @@
+{
+  "formatVersion": 0,
+  "pmdVersion": "6.34.0",
+  "timestamp": "2021-06-04T13:14:16.754+03:00",
+  "files": [
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/ArrayUtils.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 1682,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/ClassUtils.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 436,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/NumberUtils.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 287,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/enum/Enum.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 184,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/enum/EnumUtils.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 27,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/enums/Enum.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 184,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/enums/EnumUtils.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 27,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/math/NumberUtils.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 633,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/text/StrBuilder.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 1153,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/7494185/commons-lang-2.6.jar/org/apache/commons/lang/time/FastDateFormat.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 508,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    }
+  ],
+  "suppressedViolations": [],
+  "processingErrors": [],
+  "configurationErrors": []
+}

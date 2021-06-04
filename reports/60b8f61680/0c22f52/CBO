@@ -1,0 +1,181 @@
+{
+  "formatVersion": 0,
+  "pmdVersion": "6.34.0",
+  "timestamp": "2021-06-04T13:00:31.766+03:00",
+  "files": [
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/ArchiveStreamFactory.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 288,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/sevenz/LZMA2Decoder.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 78,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/sevenz/LZMADecoder.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 80,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/sevenz/SevenZFile.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 857,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/zip/ExtraFieldUtils.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 162,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/zip/NioZipEncoding.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 137,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 572,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 821,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/zip/ZipFile.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 520,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+      "violations": [
+        {
+          "beginline": 1,
+          "begincolumn": 1,
+          "endline": 368,
+          "endcolumn": 2,
+          "description": "High amount of different objects as members denotes a high coupling",
+          "rule": "CouplingBetweenObjects",
+          "ruleset": "Design",
+          "priority": 3,
+          "externalInfoUrl": "https://pmd.github.io/pmd-6.34.0/pmd_rules_java_design.html#couplingbetweenobjects"
+        }
+      ]
+    }
+  ],
+  "suppressedViolations": [],
+  "processingErrors": [
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/zip/ExplodingInputStream.java",
+      "message": "PMDException: Error while parsing /home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/zip/ExplodingInputStream.java",
+      "detail": "net.sourceforge.pmd.PMDException: Error while parsing /home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/archivers/zip/ExplodingInputStream.java\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:116)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:95)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:57)\n\tat net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)\n\tat net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: net.sourceforge.pmd.lang.java.ast.ParseException: Encountered \" \"null\" \"null \"\" at line 43, column 19.\nWas expecting:\n    \")\" ...\n    \n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.generateParseException(JavaParser.java:13326)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.jj_consume_token(JavaParser.java:13210)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ResourceSpecification(JavaParser.java:6681)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.TryStatement(JavaParser.java:6617)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Statement(JavaParser.java:5408)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.BlockStatement(JavaParser.java:5571)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Block(JavaParser.java:5488)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Statement(JavaParser.java:5365)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.IfStatement(JavaParser.java:6180)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Statement(JavaParser.java:5381)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.BlockStatement(JavaParser.java:5571)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Block(JavaParser.java:5488)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.MethodDeclaration(JavaParser.java:2104)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceBodyDeclaration(JavaParser.java:1785)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceBody(JavaParser.java:1738)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceDeclaration(JavaParser.java:879)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.TypeDeclaration(JavaParser.java:781)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.CompilationUnit(JavaParser.java:501)\n\tat net.sourceforge.pmd.lang.java.AbstractJavaParser.parse(AbstractJavaParser.java:62)\n\tat net.sourceforge.pmd.SourceCodeProcessor.parse(SourceCodeProcessor.java:127)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:191)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:113)\n\t... 10 more\n"
+    },
+    {
+      "filename": "/home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorOutputStream.java",
+      "message": "PMDException: Error while parsing /home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorOutputStream.java",
+      "detail": "net.sourceforge.pmd.PMDException: Error while parsing /home/asterka/Desktop/projects/nodejs/code-visualizer-server/classes/60b8f61680/0c22f52/commons-compress-1.19.jar/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorOutputStream.java\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:116)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:95)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:57)\n\tat net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:85)\n\tat net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:29)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: net.sourceforge.pmd.lang.java.ast.ParseException: Encountered \" \"null\" \"null \"\" at line 75, column 39.\nWas expecting:\n    \")\" ...\n    \n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.generateParseException(JavaParser.java:13326)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.jj_consume_token(JavaParser.java:13210)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ResourceSpecification(JavaParser.java:6681)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.TryStatement(JavaParser.java:6617)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Statement(JavaParser.java:5408)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.BlockStatement(JavaParser.java:5571)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.Block(JavaParser.java:5488)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.MethodDeclaration(JavaParser.java:2104)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceBodyDeclaration(JavaParser.java:1785)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceBody(JavaParser.java:1738)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceDeclaration(JavaParser.java:879)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.TypeDeclaration(JavaParser.java:781)\n\tat net.sourceforge.pmd.lang.java.ast.JavaParser.CompilationUnit(JavaParser.java:501)\n\tat net.sourceforge.pmd.lang.java.AbstractJavaParser.parse(AbstractJavaParser.java:62)\n\tat net.sourceforge.pmd.SourceCodeProcessor.parse(SourceCodeProcessor.java:127)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:191)\n\tat net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:113)\n\t... 10 more\n"
+    }
+  ],
+  "configurationErrors": []
+}
