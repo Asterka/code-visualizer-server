@@ -108,3 +108,9 @@ dist
 
 # User directories
 res
+
+./reports
+
+./res/*
+
+./reports

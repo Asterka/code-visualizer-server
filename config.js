@@ -1,5 +1,5 @@
 const config = {
-    "parsedResouceHomeDirectory":"./classes",
+    "parsedResouceHomeDirectory":"./reports",
     "dependentModulesDirectoy":"./project-files",
     "runtimeResources":"./res"
 }

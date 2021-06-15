@@ -19,35 +19,37 @@ app.use(fileUpload());
 app.use("/metrics", express.static("reports"));
 
 // Get general info about the projects
-const measures = fs.readFileSync(`${__dirname}/res/measures.xml`, "utf-8")
+const measures = fs.readFileSync(`${__dirname}/res/measures.xml`, "utf-8");
 
-
-function findMetricByClass(classMetric, parsedXMLMetrics, obj){
-	parsedXMLMetrics["METRICS"]["METRIC"].forEach(element => {
-		if(element["$"].abbreviation === classMetric){
-			obj = { "name":  element["$"].name}
-			obj.values = []
-			element["VALUE"].forEach(value => {
-				let len = obj.values.length
-				obj.values[len] = {}
-				obj.values[len] = {"className":value["$"]["measured"], "value": value["$"]["value"]}
-			});
-		}
-	});
-	return obj;
+function findMetricByClass(classMetric, parsedXMLMetrics, obj) {
+  parsedXMLMetrics["METRICS"]["METRIC"].forEach((element) => {
+    if (element["$"].abbreviation === classMetric) {
+      obj = { name: element["$"].name };
+      obj.values = [];
+      element["VALUE"].forEach((value) => {
+        let len = obj.values.length;
+        obj.values[len] = {};
+        obj.values[len] = {
+          className: value["$"]["measured"],
+          value: value["$"]["value"],
+        };
+      });
+    }
+  });
+  return obj;
 }
 
-app.get('/api', function(req, res) {
-	console.log("Got a request")
-	//Get the requested metric name
-	const classOfMetric = req.query.metric;
-	var response = "";
-	let obj = {}
-	const result = parseString(measures, function(err, result){
-		obj = findMetricByClass(classOfMetric, result, obj);
-	})
-	res.status(200).json(obj) 
-})
+app.get("/api", function (req, res) {
+  console.log("Got a request");
+  //Get the requested metric name
+  const classOfMetric = req.query.metric;
+  var response = "";
+  let obj = {};
+  const result = parseString(measures, function (err, result) {
+    obj = findMetricByClass(classOfMetric, result, obj);
+  });
+  res.status(200).json(obj);
+});
 
 app.get("/projects", (req, res) => {
   let user_token = req.query.token;
@@ -98,33 +100,41 @@ app.post("/upload", (req, res) => {
     `${__dirname}/res/upload-dir/${token}/${project_token}/${file.name}`,
     /* Call the asyncronous function that'd return a Promise and then send client data when promise is resolved */
     (async (err) => {
-      if (err) {
-        console.error(err);
-        return res.status(500).send(err);
-      }
       /* If no error stopped this from executing, start calling asunchronous functions one by one */
       await projectUtils.decompileUserProject(fileName, token, project_token);
       /* After all the files have been parsed, generate dependencies files between classes using JDEPS */
-      await projectUtils.generateDependecies(token, project_token)
+      await projectUtils.generateMetrics(token, project_token);
       /* After that, execute the dependency parser, and metric parser and form the get responce to the client */
-      result = await dependencies(fileName, token, project_token);
-    })().then(() => {
-      /* Send this POST request's respone to the client side */
-      res.json({
-        /* The file that has been uploaded for the client to get it */
-        fileName: file.name,
-        /* Its uploaded path */
-        filePath: `/upload-dir/${token}/${project_token}/${file.name}`,
-        /* Data that's been retrieved from the project, considering connections between classes*/
-        data: result,
-      });
-    }).catch((error)=>{
-      res.status(500).json({
-        fileName: ``,
-        filePath: ``,
-        data: error.stderr,
-      });
-    })
+      result = await dependencies(fileName, token, project_token)
+        .then(() => {
+          /* Send this POST request's respone to the client side */
+          res.json({
+            /* The file that has been uploaded for the client to get it */
+            fileName: file.name,
+            /* Its uploaded path */
+            filePath: `/upload-dir/${token}/${project_token}/${file.name}`,
+            /* Data that's been retrieved from the project, considering connections between classes*/
+            data: result,
+          });
+        })
+        .catch((error) => {
+          if (error.stderr.split(':')[0] === 'Error') {
+            res.status(500).json({
+              fileName: ``,
+              filePath: ``,
+              data: error.stderr,
+            });
+          } else {
+            res.json({
+              fileName: file.name,
+            /* Its uploaded path */
+            filePath: `/upload-dir/${token}/${project_token}/${file.name}`,
+            /* Data that's been retrieved from the project, considering connections between classes*/
+            data: result,
+            });
+          }
+        });
+    })()
   );
 });
 
@@ -141,15 +151,17 @@ const dependencies = async (proj_name, token, project_token) => {
   });
   await metrics
     .parseMetric({
-      directory: `./classes/${token}/${project_token}`,
-      ruleset: [`LOC.xml`, 'CYCOMP.xml', 'CBO.xml'],
+      directory: `./reports/${token}/${project_token}`,
+      ruleset: {
+        rulesetFolder: "./project-files/rulesets",
+        rules: [`LOC.xml`, "CYCOMP.xml", "CBO.xml"],
+      },
       user_token: token,
-      project_token: project_token
+      project_token: project_token,
     })
     .catch((err) => {
-      console.log(err);
+      throw err;
     });
-  return deps[`${proj_name}.dot`];
 };
 
 let deps = {};
@@ -177,7 +189,7 @@ const getDeps = async (path, token, project_token, proj_name) => {
             splittedTempArray = element.split('"');
             packageName = splittedTempArray[1];
             const relPath =
-              __dirname + `/classes/${token}/${project_token}/${proj_name}/`;
+              __dirname + `/reports/${token}/${project_token}/${proj_name}/`;
             //get the last significant element, drop the ";" in the end
             dependsOn = splittedTempArray[splittedTempArray.length - 2];
             dependsOn = dependsOn.split(" ")[0];

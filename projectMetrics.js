@@ -7,17 +7,16 @@ exports.parseMetric = async ({
   user_token,
   project_token,
 }) => {
-  for await (let rule of ruleset) {
+  const promises = ruleset.rules.map((rule) =>
     exec(
-      `mkdir -p ${originalPath}/reports/${user_token}/${project_token} && ./project-files/pmd-bin-6.34.0/bin/run.sh pmd -d ${directory} -f json -R ${rule} -r ./reports/${user_token}/${project_token}/${
+      `mkdir -p ${originalPath}/reports/${user_token}/${project_token} && ./project-files/pmd-bin-6.34.0/bin/run.sh pmd -d ${directory} -f json -R ${
+        ruleset.rulesetFolder
+      }/${rule} -r ./reports/${user_token}/${project_token}/${
         rule.split(".")[0]
-      }`,
-      (err, stdout, stderr) => {
-        if (err) {
-          console.log(`Failed while parsing the metrics`, stderr);
-        } else {
-        }
-      }
-    );
-  }
+      }`
+    )
+  );
+  await Promise.all(promises).catch((err)=>{
+    throw err
+  })
 };
